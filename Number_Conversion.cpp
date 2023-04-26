@@ -36,7 +36,7 @@ public:
         int decimalNumber = 0;
         int power = 1;
 
-         // Iterate through the string in reverse order
+            // Iterate through the string in reverse order
         for (int i = number.size() - 1; i >= 0; i--)
         {
             // Convert the current digit to an integer value
@@ -49,7 +49,11 @@ public:
             {
                 digit = number[i] - 'A' + 10;
             }
-    }			
-
+         }	
+            // Add the digit times the appropriate power of the radix to the decimal number
+            decimalNumber += digit * power;
+            power *= radix1;
+        return decimalNumber;
+    }
 	
 };
