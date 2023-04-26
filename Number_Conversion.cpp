@@ -95,5 +95,13 @@ public:
     }
 
 };
+int main()
+{
+    RadixConverter converter;
+    converter.get_number();
+    converter.convertRadix();
+    return 0;
+}
+
        
   
