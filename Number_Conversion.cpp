@@ -77,7 +77,6 @@ public:
             result = digit + result;
             decimalNumber /= radix2;
         }
-
         return result;
     }
 };
