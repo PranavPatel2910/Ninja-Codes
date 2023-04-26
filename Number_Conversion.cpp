@@ -54,8 +54,21 @@ public:
             power *= radix1;
         }
         return decimalNumber;
-    
+    }
+      // Convert a decimal number to any radix
+    string toRadix(int decimalNumber)
+    {
+        string result = "";
+
+        // Keep dividing the decimal number by the radix and appending the remainders to the result
+        while (decimalNumber > 0)
+        {
+            int remainder = decimalNumber % radix2;
+           // Convert the remainder to the appropriate digit (either a number or a letter)
+            char digit;
         }
+    }
+
     
 }; 	
        
