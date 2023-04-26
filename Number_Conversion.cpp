@@ -12,4 +12,4 @@ class RadixConverter
 public:
     RadixConverter() {}
     ~RadixConverter() {}
-}
+};
