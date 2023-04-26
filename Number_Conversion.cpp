@@ -68,6 +68,17 @@ public:
             int remainder = decimalNumber % radix2;
            // Convert the remainder to the appropriate digit (either a number or a letter)
             char digit;
+
+             if (remainder < 10)
+            {
+                digit = remainder + '0';
+            }
+            else
+            {
+                digit = remainder - 10 + 'A';
+            }
+
+
         }
     }
 	
