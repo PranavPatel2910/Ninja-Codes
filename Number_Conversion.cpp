@@ -77,10 +77,11 @@ public:
             {
                 digit = remainder - 10 + 'A';
             }
-
-
+        result = digit + result;
+            decimalNumber /= radix2;
         }
+
+        return result;
     }
 	
-    
 };
