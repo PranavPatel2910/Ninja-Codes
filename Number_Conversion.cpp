@@ -35,5 +35,27 @@ public:
     {
         int decimalNumber = 0;
         int power = 1;
+        			
+			        // Iterate through the string in reverse order
+        for (int i = number.size() - 1; i >= 0; i--)
+        {
+            // Convert the current digit to an integer value
+            int digit;
+            if (isdigit(number[i]))
+            {
+                digit = number[i] - '0';
+            }
+            else
+            {
+                digit = number[i] - 'A' + 10;
+            }
+
+            // Add the digit times the appropriate power of the radix to the decimal number
+            decimalNumber += digit * power;
+            power *= radix1;
+        }
+        return decimalNumber;
     }
+	
+    
 };
