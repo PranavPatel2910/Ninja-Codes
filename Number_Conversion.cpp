@@ -19,5 +19,15 @@ public:
         cin >> radix1;
         cout << "Enter Number : ";
         cin >> number;
+    
+         for (int i = 0; i < number.size(); i++)
+        {
+            if (number[i] == radix1 || number[i] == radix1 + 'A' - 10)
+            {
+                cout << "You Entered an Invalid number corresponding to base " << radix1 << endl;
+            }
+        }
+        cout << "Enter Radix of number you want to convert it to : ";
+        cin >> radix2;
     }
 };
