@@ -30,4 +30,10 @@ public:
         cout << "Enter Radix of number you want to convert it to : ";
         cin >> radix2;
     }
+     // Convert a number from any radix to decimal (base 10)
+    int toDecimal(void)
+    {
+        int decimalNumber = 0;
+        int power = 1;
+    }
 };
